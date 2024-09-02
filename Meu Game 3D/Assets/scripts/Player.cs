@@ -19,9 +19,9 @@ public class Player : MonoBehaviour
     {
          Debug.Log("UPDATE"); 
          float h = Input.GetAxis("Horizontal"); // -1 esquerda, 0 nada, 1 direita
-         float v = Input.GetAxis("Vertical"); // - 1 pra trás, 0 nada, 1 pra frente
+         float v = Input.GetAxis("Vertical"); // - 1 pra trï¿½s, 0 nada, 1 pra frente
 
-         vector3 direcao = new vector3(h,0,v)
-         rb.AdForce(direcao * velocidade);
+         Vector3 direcao = new Vector3(h,0,v);
+         rb.AddForce(direcao * velocidade * Time.deltaTime);
     } 
 }
