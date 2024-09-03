@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camerafollow : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
     private Transform alvo;
     public Vector3 offset;
