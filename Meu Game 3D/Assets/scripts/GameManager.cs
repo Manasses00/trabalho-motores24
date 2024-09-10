@@ -27,14 +27,18 @@ private AudioSource source;
         restantes -= valor;
         hud.text = $"Moedas restantes: {restantes}";
         source.PlayOneShot(clipMoeda);
-        if (restantes <= 0);
+        if (restantes <= 0)
         {
-            //ganhou o jogo
-            msgVitoria.text = "Parabéns!";
-          //  source.Stop();
-            source.PlayOneShot(clipVitoria);
-
+             //ganhou o jogo
+             msgVitoria.text = "Parabéns!";
+             source.Stop();
+             source.PlayOneShot(clipVitoria);
         }
+
+        
+           
+
+        
     }
 
 
