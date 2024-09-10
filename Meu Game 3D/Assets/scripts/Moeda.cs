@@ -21,6 +21,7 @@ public int velocidadeGiro = 50;
     {
         if(other.tag == "Player")
         {
+            FindObjectOfType<GameManager>().SubtrairMoedas(1);
             Destroy(gameObject);
         }
     }
